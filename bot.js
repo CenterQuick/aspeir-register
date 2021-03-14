@@ -139,6 +139,18 @@ client.on("guildMemberAdd", member => {
 
 //------------------------------------------------------------------------------------------------------------------------------------\\
 
+client.on("message", message => {
+  if (message.content === "tag") {
+    message.channel.send("Ψ");
+  }
+});
+
+client.on("message", message => {
+  if (message.content === "Tag") {
+    message.channel.send("Ψ");
+  }
+});
+
 //-----------------------TAG-ROL----------------------\\
 
 client.on("userUpdate", async (stg, yeni) => {
