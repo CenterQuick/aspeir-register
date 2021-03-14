@@ -130,10 +130,10 @@ client.on("guildMemberAdd", member => {
 
 client.on("guildMemberAdd", member => {
   const embed = new Discord.RichEmbed()
-      .setTitle("Yeni Üye !")
-      .setAuthor("Sunucumuza hoşgeldin! ")
-      .setColor("RED")
-      .setDescription("Kayıt olmak için @Ψ Teyit Görevlisi ile iletişime geçebilirsin.")
+    .setTitle("Yeni Üye !")
+    .setAuthor("Sunucumuza hoşgeldin! ")
+    .setColor("RED")
+    .setDescription("Kayıt olmak için @Ψ Teyit Görevlisi ile iletişime geçebilirsin.")
   member.guild.channels.chache.get('799569943921688577').send(embed);
 });
 
