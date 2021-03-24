@@ -51,9 +51,9 @@ const embed = new Discord.MessageEmbed()
     .addField(`Yeni İsmin:`, `\`${tag} ${isim} • ${yas}\` Olarak Güncellendi`) 
     .addField(`Yetkili Toplam:`, `\`${kayıtlar}\` Kayıtlara Sahip.`)
     .setThumbnail(message.author.avatarURL())
-.setFooter(`Heartling Register`)
+.setFooter(`Aspeir Register`)
 .setColor('RED')
-client.channels.cache.get('8799391453108371530').send(embed)
+client.channels.cache.get('799391453108371530').send(embed)
 
 genelchat.send(`<@${member.id}>, Aramıza Hoş Geldin ! İyi eğlenceler`)
 
