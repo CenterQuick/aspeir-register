@@ -116,7 +116,7 @@ client.on("error", e => {
 //-----------------------GİRENE-ROL-VERME----------------------\\     STG
 
 client.on("guildMemberAdd", member => {
-  member.roles.add("799666885095718913"); // UNREGİSTER ROLÜNÜN İDSİNİ GİRİN
+  member.roles.add("825038592371851294"); // UNREGİSTER ROLÜNÜN İDSİNİ GİRİN
 });
 
 //-----------------------GİRENE-ROL-VERME----------------------\\     STG
@@ -149,8 +149,8 @@ client.on("userUpdate", async (stg, yeni) => {
   var sunucu = client.guilds.cache.get("799391453108371527"); // Buraya Sunucu ID
   var uye = sunucu.members.cache.get(yeni.id);
   var tag = "Ψ"; // Buraya Ekip Tag
-  var tagrol = "799666881199079485"; // Buraya Ekip Rolünün ID
-  var logKanali = "799391453108371530"; // Loglanacağı Kanalın ID
+  var tagrol = "825027304164950107"; // Buraya Ekip Rolünün ID
+  var logKanali = "825008148749746218"; // Loglanacağı Kanalın ID
 
   if (
     !sunucu.members.cache.has(yeni.id) ||
@@ -203,9 +203,9 @@ client.on("userUpdate", async (stg, yeni) => {
 //----------------------TAG-KONTROL----------------------\\
 
 client.on("guildMemberAdd", member => {
-  let sunucuid = "803666322700369931"; //Buraya sunucunuzun IDsini yazın
+  let sunucuid = "799391453108371527"; //Buraya sunucunuzun IDsini yazın
   let tag = "Ψ"; //Buraya tagınızı yazın
-  let rol = "799666881199079485"; //Buraya tag alındığı zaman verilecek rolün IDsini yazın
+  let rol = "825027304164950107"; //Buraya tag alındığı zaman verilecek rolün IDsini yazın
   if (member.user.username.includes(tag)) {
     member.roles.add(rol);
     const tagalma = new Discord.MessageEmbed()
@@ -214,7 +214,7 @@ client.on("guildMemberAdd", member => {
         `<@${member.id}> İsimli şahıs sunucuya taglı şekilde katıldı! Doğuştan bizden.`
       )
       .setTimestamp();
-    client.channels.cache.get("799391453108371530").send(tagalma);
+    client.channels.cache.get("825008148749746218").send(tagalma);
   }
 });
 
@@ -231,7 +231,7 @@ client.on("guildMemberAdd", member => {
 //------------------BOTUN-SESTE-KALMA-KOMUTU------------------------------\\
 
 client.on("ready", () => {
-  client.channels.cache.get("808790437539217499").join();
+  client.channels.cache.get("823988408917295214").join();
 });
 
 
