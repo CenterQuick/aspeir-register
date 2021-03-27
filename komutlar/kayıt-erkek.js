@@ -3,12 +3,12 @@ const db = require('quick.db')
 
 exports.run = async (client, message, args) => {
   
-if(!["799666873443680367"].some(role => message.member.roles.cache.get(role)) && (!message.member.hasPermission("ADMINISTRATOR"))) return message.channel.send(`Bu Komutu Kullanabilmek İçin Yetkin Bulunmuyor.`)
+if(!["825308508215181313"].some(role => message.member.roles.cache.get(role)) && (!message.member.hasPermission("ADMINISTRATOR"))) return message.channel.send(`Bu Komutu Kullanabilmek İçin Yetkin Bulunmuyor.`)
   
-const erkek = message.guild.roles.cache.find(r => r.id === "799666883082453063")
-const kayıtsız = message.guild.roles.cache.find(r => r.id === "799666885095718913")
-const reglog = message.guild.channels.cache.find(c => c.id === "799569943921688577")
-const genelchat = message.guild.channels.cache.find(g => g.id === "799391453108371530")
+const erkek = message.guild.roles.cache.find(r => r.id === "825036805686427668")
+const kayıtsız = message.guild.roles.cache.find(r => r.id === "825038592371851294")
+const reglog = message.guild.channels.cache.find(c => c.id === "825012661669593128")
+const genelchat = message.guild.channels.cache.find(g => g.id === "825008148749746218")
 
 const member = message.guild.member(message.mentions.members.first() || message.guild.members.cache.get(args[0]));
 if(!member) return message.channel.send(`Bir Kullanıcı Belirt.`)
@@ -53,7 +53,7 @@ const embed = new Discord.MessageEmbed()
     .setThumbnail(message.author.avatarURL())
 .setFooter(`Aspeir Register`)
 .setColor('RED')
-client.channels.cache.get('799391453108371530').send(embed)
+client.channels.cache.get('825008148749746218').send(embed)
 
 genelchat.send(`<@${member.id}>, Aramıza Hoş Geldin ! İyi eğlenceler`)
 
